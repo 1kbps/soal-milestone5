@@ -1,17 +1,23 @@
-var pKeepsBids = function (){
-    for (let o of pKeepsBidSequence()){
+
+// pKeepsBidSequence () whose value is a random number between 100 and 200 to be called 12 times
+
+var pKeepsBids = function(a){
+    var pKeepsBidsTemp = [];
+    for (var i = 0; i < a.length; i += 6) {
+    pKeepsBidsTemp.push(a[i]);
+    }
+	return pKeepsBidsTemp;
+}
+
+
+
     //runs the wicket keeper bid sequence function 
     //returns array with 6 values
-    //124, 160, 110, 135, 123, 192
-    //take the value at the 0 index & store in new array at index 0
-    //124
-    //pKeepSelect = [174, 110, 124]
+    
     //loop function 12 times
     //array 12 values long representing twelve auction prices of wicket keepers
 
-    }
-}
-
+ 
 //run bid sequence function
 //return array with 6 values
 //[1,1,3,4,3,5,6,2,4,5,]
