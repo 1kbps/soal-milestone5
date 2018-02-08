@@ -1,8 +1,7 @@
-
-// Durstenfeld Shuffle algorithm for random shuffles of an array
+var faker = require('faker/locale/en');// Durstenfeld Shuffle algorithm for random shuffles of an array
 //retrieved from: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 
-var teamNumbers = [1,2,3,4,5,6];
+var teamNumbers = [0,1,2,3,4,5];
 function shuffleOrder(array) {
     for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
@@ -29,3 +28,22 @@ shuffleOrder (teamNumbers);
 */
 
 // six sequences which produce the budget per the requisite player or staff slot. 
+
+
+
+var xNew = [];
+var xArray = [0,1,2,3,4,5];
+for (i=0; i<114; i++){
+  xNew=xNew.concat(xArray[i]);
+  
+    var xArray = [0,1,2,3,4,5];
+  }
+  
+
+
+// var xNew = [];
+// for (i=0; i<114; i++){
+//     xNew=xNew.concat(xArray[i]);
+
+
+console.log(xNew);

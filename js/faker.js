@@ -1,4 +1,4 @@
-var faker = require('faker/locale/en'); //choosing locale 
+var faker = require('faker/locale/en');                             //choosing locale 
 var fakerInd = require('faker/locale/en_IND');
 
 function player(string){                                           //Batsman object
@@ -15,9 +15,9 @@ function player(string){                                           //Batsman obj
             case 'All-Rounder':return bats(),bowls();
         }
     }
-    var bats = function(){return console.log("I bat");};
-    var bowls = function(){return console.log("I bowl");};
-    var keeps= function(){return console.log("I keep");};
+    var bats = function(){return "I bat"};
+    var bowls = function(){return "I bowl"};
+    var keeps= function(){return "I keep"};
     
 }
 
@@ -27,6 +27,7 @@ function teamStaff(string1){
     this.name = faker.name.findName(0);
     this.nation = faker.address.country();
     this.type = string1;
+    this.price_inLakhs = faker.random.number({'min':20,'max':90});
     var functionality = function (string){
         switch(string1){
             case 'Coach':return coaches();
@@ -127,7 +128,11 @@ for(i=0; i < 6; i++){
 }
 
   
+console.log(bidPool[0].price_inLakhs);
+for(i=0; i<114; i++){
+     console.log("Player up for auction : "+bidPool[i].name+"\nPrice(in lakhs): "+bidPool[i].price_inLakhs);
+        for()
+    }
 
-console.log(teamPool);
 
-
+   
